@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+
+import os
+import sys
+
+
+bin_dir = os.path.dirname(os.path.realpath(__file__))
+pytest_dir = os.path.abspath(os.path.join(bin_dir, os.pardir))
+lib_dir = os.path.join(pytest_dir, 'lib')
+tests_dir = os.path.join(pytest_dir, 'tests')
+sys.path.insert(0, lib_dir)
+sys.path.insert(0, tests_dir)
+sys.dont_write_bytecode = True
+
+
+from pytest.setup import main
+
+
+if __name__ == '__main__':
+    main()

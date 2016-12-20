@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<system_name VNC_address="ip_address" VNC_password="vnc password" VNC_prompt="\$ ">
+	<HOST name="system_name">
+		<user>
+			<type>solaris</type>
+			<password>host_password</password>
+			<prompt># </prompt>
+			<name>root</name>
+		</user>
+	</HOST>
+	<SP name="sp_name">
+		<user>
+			<type>ilom</type>
+			<password>ilom_password</password>
+			<prompt>-&gt; </prompt>
+			<name>root</name>
+		</user>
+		<user>
+			<type>sunservice</type>
+			<password>sunservice_password</password>
+			<prompt>\]# </prompt>
+			<name>sunservice</name>
+		</user>
+	</SP>
+</system_name>
